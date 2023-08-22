@@ -1,0 +1,1 @@
+##  This is a directory focusing on Non Relational Database management System in specific MongoDB.

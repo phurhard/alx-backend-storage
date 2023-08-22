@@ -1,0 +1,1 @@
+## This directory is based on redis, which is a key-value database used especially in caching mechanism, and token storage.
