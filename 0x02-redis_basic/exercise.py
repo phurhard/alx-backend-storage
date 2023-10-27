@@ -21,11 +21,10 @@ class Cache():
     def get(self, key: str, fn: typing.Callable[[], str]=None) -> str:
         """Get method to return the dsired format of the input key"""
         try:
-            if (fn == None):
+            if fn is None:
                 return self._redis.get(key)
-            else:
-                attr = self._redis.get(key)
-                return fn(attr)
+            attr = self._redis.get(key)
+            return fn(attr)
         except Exception as e:
             return None
         
