@@ -1,5 +1,5 @@
 -- Creates a table named users with attr of name, email and country
-
+DROP TABLE IF EXISTS 'users';
 CREATE TABLE IF NOT EXISTS users (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     email VAR(255) NOT NULL UNIQUE,
