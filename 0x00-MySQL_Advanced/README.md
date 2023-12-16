@@ -104,7 +104,7 @@ Triggers are set of instructions that are automatically executed in response to 
 - synthax:
 
     ```sql
-        CREATE TRIGGER trigger_nme BEFORE|AFTER INSERT|UPDATE|DELETE ON     table_name
+        CREATE TRIGGER trigger_name BEFORE|AFTER INSERT|UPDATE|DELETE ON     table_name
         FOR EACH ROW
         BEGIN  
         -- SQL statements
