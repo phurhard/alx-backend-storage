@@ -4,13 +4,13 @@
 DELIMITER //
 
 CREATE TRIGGER trigger_email_validation 
-AFTER UPDATE ON users
+BEFORE UPDATE ON users
 FOR EACH ROW
 BEGIN
     IF NEW.email != OLD.email THEN
-        UPDATE users
-        SET valid_email = CASE WHEN valid_email = 0 THEN 1 ELSE 0 END
-        WHERE id = NEW.id;
+        -- UPDATE users
+        SET NEW.valid_email = CASE WHEN NEW.valid_email = 0 THEN 1 ELSE 0 END;
+        -- WHERE id = NEW.id;
     END IF;
 END //
 
