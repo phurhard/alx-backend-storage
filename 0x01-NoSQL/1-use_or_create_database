@@ -1,0 +1,3 @@
+// Creates a dataase if it does not exist or uses one if it exists
+
+use my_db
